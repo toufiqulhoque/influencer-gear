@@ -1,0 +1,524 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+
+
+/* Common Styles or utilities*/
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header{
+    background-color: white;
+    color: black;
+
+}
+
+
+hr{
+    display:block;
+    border:none;
+    color:white;
+    height:1px;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(#000), to(#fff));
+}
+
+p {
+    font-size: 12px;
+}
+
+
+/* Navbar */
+.navbar{
+    display: flex;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+li {
+    display: inline;
+    padding-right: 36px;
+}
+
+
+/* banner part */
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+    padding: 3% 5%;
+}
+
+.banner-img{
+    height: 500px;
+}
+
+.banner-main-img{
+    width: 440px;
+    height: 414px;
+    background-image: url('/images/Circle\ design.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.prebook-btn{
+    background-color: #E02C6D;
+    padding: 4% 9%;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+
+.prebook-btn:hover{
+    background-color: white;
+    padding: 4% 9%;
+    color: #E02C6D;
+    border: 1px solid #E02C6D;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+/* brands */
+.brands{
+    width: 1110px;
+    display: flex;
+    margin: auto;
+    padding: 2%;
+    justify-content: space-around;
+    
+}
+
+/* popular collection */
+.popular-collection-main{
+    margin-top: 4%;
+    margin-bottom: 2%;
+}
+
+.popular-heading{
+    margin: auto;
+    text-align: center;
+}
+
+.popular-collection{
+    width: 1050px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-bottom: 165px; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: flex-start;
+    grid-column-gap: 30px;
+}
+
+.see-more{
+    /* position: absolute;
+    right: 22%;
+    top: 400%; */
+    color: #E02C6D;
+    border:none;
+    background-color: white;
+    font-size: 1.1rem; 
+    margin-left: 72%;
+    margin-bottom: 150px;
+}
+
+.see-more:hover{
+    /* position: absolute;
+    right: 22%;
+    top: 263%;
+    color: black;
+    border:none;
+    background-color: white; */
+    color: #E02C6D;
+    border: none;
+    background-color: white;
+    font-size: 1.1rem; 
+    margin-left: 72%;
+    margin-bottom: 150px;
+    font-size: 1.1rem;
+    cursor: pointer;
+
+}
+
+.collection-cards{
+    width: 300px;
+    height: 485px;
+    box-shadow: 0px 0px 40px rgb(0 0 0 / 15%);
+    border-radius: 10px;
+    margin-bottom: 27px;
+    padding: 15px;
+}
+
+.collection-img{
+    width: 300px;
+    height: 256px;
+    border-radius: 5px;
+}
+
+
+/* featured section */
+.featured{
+    display: flex;
+    text-align: start;
+    justify-content: space-around;
+    width: 1100px;
+    margin: auto;
+}
+
+.featured-img{
+    height: 200px;
+    width: 300px;
+    border-radius: 15px;
+}
+
+.featured-details{
+    width: 630px;
+}
+
+.featured-btn{
+    background-color: #E02C6D;
+    padding: 2% 4%;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.featured-btn:hover{
+    background-color: white;
+    padding: 2% 4%;
+    color: #E02C6D;
+    border: 1px solid #E02C6D;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* footer part */
+footer{
+    background-color: #0A0826;
+    color: white;
+    text-align: center;
+    /* height: 200px; */
+    padding: 50px;
+}
+
+.footer-title{
+    margin-bottom: 20px;
+}
+
+.footer-copyright1{
+
+}
+
+.footer-copyright2{
+
+}
+
+.footer-socials{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    
+}
+
+.footer-links{
+    color: white;
+}
+
+.footer-links:hover{
+    color: rgb(124, 124, 124);
+}
+
+
+.hidden-default1, .hidden-default2{
+    display: none;
+}
+
+/*----------------
+    Media Query 
+-----------------*/
+
+/*------------------ 
+ For Mobile Devices 
+ -------------------*/
+ @media only screen and (max-width:688px) {
+     body{
+         overflow-x: hidden;
+         width: auto;
+     }
+
+     /*---- navbar ----*/
+    .navbar{
+        display: flex;
+        align-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .nav-right{
+        display: none;
+    }
+
+    .nav-left{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .hidden-default1, .hidden-default2{
+        display: block;
+        margin: auto;
+    }
+
+    /* banner part */
+    .banner{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 30px;
+        padding: 3% 5%;
+    }
+
+    .banner-main-img{
+        width: 257px;
+        height: 257px;
+        background-image: url('/images/Circle\ design.svg');
+        background-position: center;
+        background-size: 100%;
+    }
+    
+    .banner-img{
+        padding: 10px;
+    }
+
+    .banner-title{
+        text-align: center;
+        font-size: 12px;
+    }
+
+    /* brands */
+    .brands{
+        width: auto;
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        padding: 2%;
+        margin: 30px 0;
+        justify-content: space-evenly;
+        align-items: stretch    
+    }
+
+    hr{
+        display: none;
+    }
+
+    .brand-img{
+        width: 63px;
+        height: 45px;
+        padding: 6px;
+    }
+
+    /* popular collection */
+    .popular-collection{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        align-items: flex-start;
+        margin-bottom: 5px;
+    }
+
+
+    .see-more{
+        color: #E02C6D;
+        border:none;
+        background-color: white;
+        font-size: 1.1rem; 
+        margin-left: 63%;
+        margin-bottom: 30px;
+    }
+
+    /* featured section */
+    .featured{
+        display: flex;
+        /* flex-direction: column-reverse; */
+        flex-wrap: wrap;
+        width: auto;
+        margin: auto;
+        margin-bottom: 35px;
+    }
+
+    .featured-img{
+        height: 240px;
+        width: 350px;
+        margin-left: 5px;
+        border-radius: 15px;
+    }
+
+    .featured-details{
+        padding: 20px;
+        text-align: start;
+        width: 330px;
+    }
+
+
+}
+
+
+
+ /*---------------------------
+    For Tablet sized Devices 
+-----------------------------*/
+@media only screen and (min-width:688px) and (max-width: 992px) {
+    body{
+        overflow-x: hidden;
+    }
+
+    /*---- navbar ----*/
+   .navbar{
+       display: flex;
+       align-content: center;
+       justify-content: space-around;
+       align-items: center;
+       padding-top: 20px;
+       text-align: center;
+   }
+
+   .nav-right{
+       display: none;
+   }
+
+   .nav-left{
+       margin-left: 20px;
+       margin-right: 20px;
+   }
+
+   .hidden-default1, .hidden-default2{
+       display: block;
+       
+   }
+
+   /* banner part */
+   .banner{
+       display: flex;
+       flex-direction: column-reverse;
+       align-items: center;
+       justify-content: space-around;
+       margin-top: 30px;
+       padding: 3% 5%;
+   }
+
+   .banner-main-img{
+       width: 440px;
+       height: 414px;
+   }
+   
+   .banner-img{
+       padding: 10px;
+   }
+
+   .banner-title{
+       text-align: center;
+       font-size: 12px;
+   }
+
+   /* brands */
+   .brands{
+       width: auto;
+       display: flex;
+       flex-wrap: wrap;
+       margin: auto;
+       padding: 2%;
+       margin: 30px 0;
+       justify-content: space-between;
+       align-items: stretch;
+   }
+
+   hr{
+       display: none;
+   }
+
+   .brand-img{
+        width: 80px;
+        height: 40px;
+        padding: 10px;
+   }
+
+   /* popular collection */
+   .popular-collection{
+       width: 100%;
+       margin-left: auto;
+       margin-right: auto;
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+       justify-items: auto;
+       margin-bottom: 5px;
+   }
+
+
+   .see-more{
+       color: #E02C6D;
+       border:none;
+       background-color: white;
+       font-size: 1.1rem; 
+       margin-left: 83%;
+       margin-bottom: 50px;
+   }
+
+   /* featured section */
+   .featured{
+       display: flex;
+       /* flex-direction: column-reverse; */
+       flex-wrap: wrap;
+       width: auto;
+       margin: auto;
+       margin-bottom: 35px;
+   }
+
+   .featured-title{
+       font-size: 121%;
+   }
+
+   .featured-img{
+       height: 240px;
+       width: 350px;
+       margin-left: 5px;
+       border-radius: 15px;
+   }
+
+   .featured-details{
+       padding: 20px;
+       text-align: start;
+       width: 330px;
+   }
+
+}
